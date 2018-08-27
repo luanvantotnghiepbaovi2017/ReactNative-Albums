@@ -1,6 +1,6 @@
 // Import a library to help create a component
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, SafeAreaView } from 'react-native';
 import Header from './src/components/header';
 
 // Create a component - First approach
@@ -10,7 +10,14 @@ import Header from './src/components/header';
 //   );
 // };
 
-// Create a component - Second approach
+// Create a component - Second approach - With SafeAreaView
+// const App = () => (
+//   <SafeAreaView style={{ backgroundColor: '#F8F8F8' }}>
+//   <Header />
+//   </SafeAreaView>
+// );
+
+// Create a component - Second approach - Without SafeAreaView
 const App = () => (
   <Header />
 );
