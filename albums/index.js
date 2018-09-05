@@ -1,7 +1,8 @@
 // Import a library to help create a component
 import React from 'react';
-import { AppRegistry, SafeAreaView } from 'react-native';
-import Header from './src/components/header';
+import { AppRegistry, View, StatusBar } from 'react-native'; // SafeAreaView
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component - First approach
 // const App = () => {
@@ -19,7 +20,10 @@ import Header from './src/components/header';
 
 // Create a component - Second approach - Without SafeAreaView
 const App = () => (
-  <Header />
+  <View>
+    <Header headerText={'Albums'} />
+    <AlbumList />
+  </View>
 );
 
 // Render it to the device
