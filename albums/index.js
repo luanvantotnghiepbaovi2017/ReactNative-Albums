@@ -20,7 +20,7 @@ import AlbumList from './src/components/AlbumList';
 
 // Create a component - Second approach - Without SafeAreaView
 const App = () => (
-  <View>
+< View style={{ flex: 1 }} >
     <Header headerText={'Albums'} />
     <AlbumList />
   </View>
